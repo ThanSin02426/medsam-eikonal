@@ -17,7 +17,9 @@ Instead of binary logits optimized via cross-entropy loss, the modified projecti
 The total loss function balances the Mean Squared Error (MSE) against the ground-truth SDF and the physics constraint, with $\lambda$ set to 0.1 to stabilize training dynamics. 
 
 The Eikonal physics loss is formulated as:
-$$\mathcal{L}_{Eikonal} = \frac{1}{N} \sum_{i=1}^{N} \left( \|\nabla \phi(x_i)\| - 1 \right)^2$$
+```math
+\mathcal{L}_{Eikonal} = \frac{1}{N} \sum_{i=1}^{N} \left( \Vert \nabla \phi(x_i) \Vert - 1 \right)^2
+```
 
 ## Training Curriculum
 To prevent model collapse under the dual complexity of clinical noise and physical constraints, training is conducted in two phases:
