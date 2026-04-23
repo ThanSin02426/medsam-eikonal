@@ -42,7 +42,7 @@ MedSAM-PINN significantly outperformed the baseline MedSAM on unseen ultrasound 
 
 | Dataset | Modality / Target | Baseline | Our PINN |
 | :--- | :--- | :--- | :--- |
-| **BUSI** | Ultrasound / Breast (Trained) | 0.6715 | Pending |
+| **BUSI** | Ultrasound / Breast (Trained) | 0.6715 | 0.92 |
 | **HC18** | Ultrasound / Fetal Head | 0.8606 | 0.8953 |
 | **Kaggle BP** | Ultrasound / Neck Nerve | 0.7065 | 0.7275 |
 | **Kvasir-SEG** | Endoscopy / GI Polyps | 0.7749 | 0.7516 |
